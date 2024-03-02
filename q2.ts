@@ -6,4 +6,4 @@ let n: number = 240;
 
 m = c * (1 + i)**n;
 
-document.write(`O valor depois de 240 meses é: ${m}`);
+document.write(`O valor depois de 240 meses é: ${m}`); 
