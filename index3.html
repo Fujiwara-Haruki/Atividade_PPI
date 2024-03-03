@@ -6,10 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link href="./css/css1.css" type="text/css" rel="stylesheet">
     <title>Questão 3</title>
 </head>
 <body>
     
+    <main>
+        <form action="" method="get">
+            <h2>Calculando quantos anos de diferença</h2>
+
+            <section class="campos-form">
+                <label for="ano1">Digite o primeiro ano (menor do que o segundo): </label>
+                <input type="text" name="ano1" id="ano1" required="required"> <br> <br>
+            </section>
+
+            <section class="campos-form">
+                <label for="ano2">Digite o segundo ano (maior do que o primeiro): </label>
+                <input type="text" name="ano2" id="ano2" required="required"> <br><br>
+            </section>
+
+            <input class="botao" type="button" value="Calcular" onclick="calcularAnos()">
+            <input class="botao" type="button" value="Voltar pras questões" onclick="window.location.href = 'index.html'">
+
+            <section >
+                <h3 class="resultado" id="resultado"></h3>
+
+            </section>
+
+        </form>
+
+    </main>
+
+
 
     <script src="q3.js"></script>
 </body>

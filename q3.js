@@ -1,11 +1,21 @@
 //Questão 3
-let data1 = new Date(prompt("Escreva a primeira data, ex: 10/10/2014. (Precisa ser menor do que a segunda)"));
-let data2 = new Date(prompt("Escreva a segunda data, ex: 10/10/2014. (Precisa ser maior do que a segunda)"));
-let ano1 = data1.getFullYear();
-let ano2 = data2.getFullYear();
-let anosPassados = ano2 - ano1;
-if (ano1 >= ano2) {
-    alert("A primeira data precisa ser menor do que a segunda");
-    location.reload(); //recarregar a página
+function calcularAnos() {
+    var data1 = new Date(document.getElementById('ano1')["value"]);
+    var data2 = new Date(document.getElementById('ano2')["value"]);
+    var ano1 = data1.getFullYear();
+    var ano2 = data2.getFullYear();
+    var anosPassados = ano2 - ano1;
+    if (ano1 >= ano2) {
+        alert("A primeira data precisa ser menor do que a segunda");
+    }
+    else {
+        var resultado = document.getElementById("resultado");
+        if (resultado) {
+            resultado.innerHTML = "A quantidade de anos que se passaram entre ".concat(ano1, " e ").concat(ano2, " \u00E9 de ").concat(anosPassados, " anos.");
+            resultado.style.display = 'block';
+        }
+        else {
+            alert('Erro! Verifique se todos os campos estão preenchidos');
+        }
+    }
 }
-document.write(`A quantidade de anos que se passaram entre ${ano1} e ${ano2} é de ${anosPassados} anos.`);
