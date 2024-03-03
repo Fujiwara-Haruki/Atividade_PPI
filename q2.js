@@ -1,7 +1,16 @@
 //questão 2 
-let m;
-let c = +prompt("Qual é o capital inicial?");
-let i = +prompt("Qual é a taxa de juros? (Valor em Decimal)");
-let n = 240;
-m = c * (1 + i) ** n;
-document.write(`O valor depois de 240 meses é: ${m}`);
+function calcularJuros() {
+    var m;
+    var c = Number(document.getElementById("capital")["value"]);
+    var i = Number(document.getElementById("juros")["value"]);
+    var n = 240;
+    m = c * Math.pow((1 + i), n);
+    var resultado = document.getElementById('resultado');
+    if (resultado) {
+        resultado.innerHTML = "O valor depois de 240 meses \u00E9: ".concat(m);
+        resultado.style.display = 'block';
+    }
+    else {
+        alert("Erro! Verifique se todos os campos estão preenchidos");
+    }
+}

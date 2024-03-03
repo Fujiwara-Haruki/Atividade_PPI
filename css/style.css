@@ -13,9 +13,9 @@ body{
     color:rgb(107, 29, 67)
 }
 main{
+    height: 90%;
     display: flex;
     flex-direction: column;
-    height: 90%;
     padding: 10%;
     border-radius: 1%;
     background-color: rgb(144, 184, 219);
