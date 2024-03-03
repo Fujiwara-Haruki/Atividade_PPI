@@ -5,9 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link href="./css/css1.css" type="text/css" rel="stylesheet">
     <title>Questão 4</title>
 </head>
 <body>
+
+    <main>
+        <form action="" method="get">
+            <h2>Calculando o orçamento do aluguel</h2>
+            <h2>R$80,00 por dia</h2>
+
+            <section class="campos-form">
+                <label for="nome">Digite seu nome: </label>
+                <input type="text" name="nome" id="nome" required="required"> <br><br>
+            </section>
+            
+            <section class="campos-form">
+                <label for="dias">Quantos dias pretende alugar o apartamento? </label>
+                <input type="number" name="dias" id="dias" required="required"> <br> <br>
+            </section>
+
+            <input class="botao" type="button" value="Calcular" onclick="calcularAluguel()">
+            <input class="botao" type="button" value="Voltar pras questões" onclick="window.location.href = 'index.html'">
+
+            <section >
+                <h3 class="resultado" id="resultado"></h3>
+
+            </section>
+
+        </form>
+
+    </main>
     
 
     <script src="q4.js"></script>

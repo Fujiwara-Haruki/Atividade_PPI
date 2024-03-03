@@ -1,4 +1,12 @@
-alert("Continue para finalizar o orçamento do aluguel. (preço do aluguel é de R$: 80,00 por dia)");
-let nome = prompt("Qual é o seu nome?");
-let dias = +prompt("Por quantos dias você vai alugar a casa?");
-document.write(`Informamos que ${nome} deverá pagar uma quantia de R$${dias * 80} pelo aluguel do apartamento no período de ${dias} dias`);
+function calcularAluguel() {
+    var nome = String(document.getElementById('nome')["value"]);
+    var dias = Number(document.getElementById('dias')["value"]);
+    var resultado = document.getElementById('resultado');
+    if (resultado) {
+        resultado.innerHTML = "Informamos que ".concat(nome, " dever\u00E1 pagar uma quantia de R$").concat(dias * 80, " pelo aluguel do apartamento no per\u00EDodo de ").concat(dias, " dias");
+        resultado.style.display = 'block';
+    }
+    else {
+        alert("Erro! Verifique se todos os campos estão preenchidos");
+    }
+}
