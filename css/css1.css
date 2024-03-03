@@ -1,0 +1,40 @@
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 5%;
+}
+
+.campos-form{
+    display: flex;
+    margin: 15px;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+h2{
+    margin: 5%;
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+input{
+    color: rgb(107, 29, 67);
+    border: 1px solid rgb(179, 49, 112);
+    border-radius: 2%;
+    padding: 10px;
+}
+
+.resultado{
+    padding: 30px;
+    display: none;
+}

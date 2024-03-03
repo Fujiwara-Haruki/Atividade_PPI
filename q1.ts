@@ -1,10 +1,20 @@
 //lista de exercicios
 
-let b1 = +prompt('Bimestre 1:');
-let b2 = +prompt('Bimestre 2:');
-let b3 = +prompt('Bimestre 3:');
-let b4 = +prompt('Bimestre 4:');
+function calcularMedia(){
+    let b1 = Number((document.getElementById('bim1') as HTMLInputElement)["value"]);
+    let b2 = Number((document.getElementById('bim2') as HTMLInputElement)["value"]);
+    let b3 = Number((document.getElementById('bim3') as HTMLInputElement)["value"]);
+    let b4 = Number((document.getElementById('bim4') as HTMLInputElement)["value"]);
 
-let media = (b1 * 2 + b2 * 2 + b3 * 3 + b4 * 3)/ 10;
+    let media = (b1 * 2 + b2 * 2 + b3 * 3 + b4 * 3)/ 10;
 
-document.write(`Média: ${media}`);
+    let resultado = document.getElementById('resultado');
+    
+    if (resultado){
+        resultado.innerHTML = `Média: ${media}`;
+        resultado.style.display = 'block';
+    }
+    else {
+        alert("Erro! Verifique se todos os campos estão preenchidos");
+    }
+}

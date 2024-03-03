@@ -1,15 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+    <link href="./css/css1.css" type="text/css" rel="stylesheet">
+
+    <title>Questão 1</title>
 </head>
 <body>
     
+    <main>
 
-    <h3>Questão 1:</h3>
+        <form action="" method="get">
+            <h2>Calculando sua média (0-100)</h2>
+
+            <section class="campos-form">
+                <label for="bim1">Nota primeiro bimestre:</label>
+                <input type="number" name="bim1" id="bim1" required="required"> <br> <br>
+            </section>
+
+            <section class="campos-form">
+                <label for="bim2">Nota Segundo bimestre:</label>
+                <input type="number" name="bim2" id="bim2" required="required"> <br><br>
+            </section>
+
+            <section class="campos-form">
+                <label for="bim3">Nota Terceiro bimestre:</label>
+                <input type="number" name="bim3" id="bim3" required="required"> <br><br>
+             </section>
+
+             <section class="campos-form">
+                <label for="bim4">Nota Quarto bimestre:</label>
+                <input type="number" name="bim4" id="bim4" required="required"> <br><br>
+            </section>
+
+            <input class="botao" type="button" value="Calcular" onclick="calcularMedia()">
+            <input class="botao" type="button" value="Voltar pras questões" onclick="window.location.href = 'index.html'">
+
+            <section >
+                <h3 class="resultado" id="resultado"></h3>
+
+            </section>
+
+        </form>
+
+    </main>
+
+
+
     <script src="q1.js"></script>
 </body>
 </html>
